@@ -12,11 +12,12 @@ const SideNav = () => {
             <button onClick={() => setshowNavDetail(!showNavDetail)} className='!text-[#fb0] lg:hidden shadow-xl/30 p-2 px-4 absolute right-0 top-0 border-0 border-[#363636] border-t-2 border-l-2 rounded-bl-xl rounded-tr-xl'>Show Detail</button>
             <div className="w-[50%] bg-[#383839] mt-5 lg:m-0 flex justify-center rounded-4xl">
                 <Image
-                    src="https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/my-avatar.png"
+                    src="/ak76024.jpg"
                     alt="Avatar"
                     width={200}
-                    height={200}
-                    className="rounded-full" // optional if you want rounded avatar
+                    height={150}
+                    className="rounded-lg"
+                    style={{ objectFit: 'cover' }}
                 />
             </div>
             <p className="font-bold text-4xl">Ak76024</p>
@@ -102,10 +103,10 @@ const SideNav = () => {
                 </div>
                 <div className='flex items-center justify-center'>
                     <a target="_blank" href="https://www.linkedin.com/in/ak76024/" rel="noopener noreferrer">
-                        <Image src="/linkedin.svg" alt="LinkedIn" width={50} height={50} />
+                        <Image src="/linkedin.svg" alt="LinkedIn" width={30} height={30} />
                     </a>
                     <a target="_blank" href="https://www.instagram.com/ak76024/" rel="noopener noreferrer">
-                        <Image src="/instagram.svg" alt="Instagram" width={50} height={50} />
+                        <Image src="/instagram.svg" alt="Instagram" width={30} height={30} />
                     </a>
                 </div>
             </div>

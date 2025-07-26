@@ -85,7 +85,7 @@ const page = () => {
                     <div className="flex flex-col gap-4">
                         <p className="font-bold text-2xl">Skills</p>
                         <div className="flex flex-wrap gap-2">
-                            {["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "MongoDB", "MySQL", "Tailwind", "Bootstrap", "Git", "Figma"].map(skill => (
+                            {["HTML", "CSS", "JavaScript","XML", "React", "Node.js", "Express", "MongoDB", "MySQL", "Tailwind", "Bootstrap","Python","Java", "Git", "Figma"].map(skill => (
                                 <span key={skill} className="bg-[#333] text-[#fb0] px-3 py-1 rounded-full text-sm font-semibold">{skill}</span>
                             ))}
                         </div>
