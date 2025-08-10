@@ -73,7 +73,7 @@ const Page = () => {
             ? classData
             : classData.filter((item) => item.tag === activeTab);
     return (
-        <div className="min-h-screen sm:m-0 py-[10vh] sm:flex flex-col lg:flex-row lg:p-20 sm:items-start sm:gap-8 sm:justify-center">
+        <div className="mainPage min-h-screen sm:m-0 py-[10vh] sm:flex flex-col lg:flex-row lg:p-20 sm:items-start sm:gap-8 sm:justify-center">
             <SideNav />
             <div className={mainBox + " sm:w-3/5 md:w-4/5 md:mx-auto p-8 relative lg:m-0 m-5 md:m-1"}>
                 <div className="flex items-center mb-8 justify-between">

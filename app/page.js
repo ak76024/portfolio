@@ -5,7 +5,7 @@ export default function Home() {
   const workBox = "bg-[#222223] px-5 sm:px-0 border-[#444444] border-b-0 border-r-0 border rounded-2xl  min-h-[20vh] flex gap-5 items-center justify-center";
 
   return (
-    <div className="min-h-screen sm:m-0 py-[10vh] sm:flex flex-col lg:flex-row lg:p-20 sm:items-start sm:gap-8 sm:justify-center">
+    <div className="mainPage min-h-screen sm:m-0 py-[10vh] sm:flex flex-col lg:flex-row lg:p-20 sm:items-start sm:gap-8 sm:justify-center">
       <SideNav />
       <div className={mainBox + " sm:w-3/5 md:w-4/5 md:mx-auto p-8 relative lg:m-0 m-5 md:m-1"}>
         <div className="flex items-center mb-8 justify-between">

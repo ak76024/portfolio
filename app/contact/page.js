@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 
 const Page = () => {
-    const mainBox = "min-h-[80vh] rounded-2xl border border-[#363636] bg-[#1e1e1f]";
+    const mainBox = "mainPage min-h-[80vh] rounded-2xl border border-[#363636] bg-[#1e1e1f]";
     const inputStyle = "md:w-[45%] w-[70vw] md:w-full border border-[#383838] font-bold rounded-xl text-lg p-3 px-5";
 
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
