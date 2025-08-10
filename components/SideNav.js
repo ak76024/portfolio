@@ -1,15 +1,25 @@
 "use client";
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const SideNav = () => {
     const mainBox = "lg:min-h-[80vh] h-fit rounded-2xl border border-[#363636] bg-[#1e1e1f] w-[85vw] mx-auto lg:m-0 lg:w-2/6 md:w-1/3 flex gap-6 flex-col items-center justify-start py-[5vh]";
     const sideNavLink = "flex w-[80%] gap-5 items-center justify-start";
     const [showNavDetail, setshowNavDetail] = useState(false);
-    const [i, seti] = useState(0)
+    const [shouldAnimate, setShouldAnimate] = useState(false);
+
+    useEffect(() => {
+        const hasAnimated = sessionStorage.getItem("hasAnimated");
+        if (!hasAnimated) {
+            setShouldAnimate(true);
+            sessionStorage.setItem("hasAnimated", "true");
+            setTimeout(() => setShouldAnimate(false), 1200); // Optional: remove class after 1.2s
+        }
+    }, []);
+
 
     return (
-        <div id='sidenav' className={mainBox + ` relative mb-5`}>
+        <div id={shouldAnimate ? "sidenav" : ""} className={mainBox + ` relative mb-5`}>
             <button onClick={() => setshowNavDetail(!showNavDetail)} className='!text-[#fb0] lg:hidden shadow-xl/30 p-2 px-4 absolute right-0 top-0 border-0 border-[#363636] border-t-2 border-l-2 rounded-bl-xl rounded-tr-xl'>Show Detail</button>
             <div className="w-[50%] bg-[#383839] mt-5 lg:m-0 flex justify-center rounded-4xl">
                 <Image
