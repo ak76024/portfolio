@@ -19,7 +19,7 @@ const page = () => {
                 <div className="flex flex-col gap-6">
                     <div className="flex gap-2 items-center">
                         <h1 className="text-xl font-bold">Akash Burnwal</h1>
-                        <a href="/akash.docx" download className="bg-[#fb0] !text-black font-semibold px-4 py-2 rounded !duration-150 hover:scale-110 active:scale-90 transition-all text-sm">Download Resume</a>
+                        <a href="/akash.pdf" download className="bg-[#fb0] !text-black font-semibold px-4 py-2 rounded !duration-150 hover:scale-110 active:scale-90 transition-all text-sm">Download Resume</a>
                     </div>
                     <div className="flex items-center gap-5">
                         <div className="sideNavIcon rounded-xl shadow-[#00000098] shadow-lg bg-[#202022]">
